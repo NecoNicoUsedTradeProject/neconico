@@ -21,6 +21,8 @@ class PaginationTest {
         Criteria cri = new Criteria();
         cri.setCurrentPage(14);
         cri.setContentPerPage(10);
+        cri.setSortingColumn("noticeId");
+        cri.setRequestOrder("desc");
 
 
         //when

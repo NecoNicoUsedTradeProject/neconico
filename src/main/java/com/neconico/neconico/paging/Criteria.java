@@ -5,7 +5,6 @@ import lombok.*;
 @ToString
 @Setter
 @Getter
-@AllArgsConstructor
 @NoArgsConstructor
 public class Criteria {
 
