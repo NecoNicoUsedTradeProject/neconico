@@ -1,4 +1,4 @@
-# 내꼬니꼬
+![findId](./src/main/resources/static/img/logo/neconico_logo.png)
 ***
 　중고나라, 번개장터, 당근마켓 등 중고거래 플랫폼에서 착안해, 중고 상품을 거래 할 수 있는 웹서비스를 기획 했습니다.  
  　판매자, 구매자, 관리자 관점에서 요구사항을 분석하고, 분석한 내용을 분담하여 서비스 구현을 진행했습니다.   
@@ -7,9 +7,9 @@
 |이름|이메일주소|핸드폰번호|
 |:---:|---|---|
 |김대희|dae4414805@gmail.com|010-9929-4805|
-|김원겸|||
-|이택민|||
-|최정연|||
+|김원겸|slzltb@gmail.com|010-9347-8573|
+|이택민|xorals9448@gmail.com|010-4233-8519|
+|최정연|jychoi091808@gmail.com|010-9428-9953|
 
 # 사용 기술
 ***
@@ -67,9 +67,68 @@
 ***
 ### 메인
 
-### 아이템
+![main](./img/page/main/main.jpg)
+
+## 로그인
+
+![login](./img/page/login/login.JPG)
+
+<details>
+<summary>구현 기능 보기</summary>
+<div markdown="1">
+
+* 로그인 상태 유지
+
+
+* 아이디 찾기
+  
+  ![findId](./img/page/login/findID.JPG)
+
+
+* 비밀 번호 찾기
+  
+  ![findPw](./img/page/login/findPW.JPG)
+
+
+</div>
+</details>
+
+
+
+### 회원가입
+
+![store](./img/page/join/join.JPG)
+<details>
+<summary>구현 기능 보기</summary>
+<div markdown="1">
+
+* 아이디 중복 검사 기능
+
+
+* 유효성 검사
+
+
+* 주소 검색 기능
+
+  ![searchlocation](./img/page/join/searchlocation.JPG)
+  
+  
+* 이메일 인증 기능
+  
+  ![emailverify](./img/page/join/emailverify.JPG)
+  ![emailverify1](./img/page/join/emailverify1.JPG)
+
+
+</div>
+</details>
+
+### 상품등록
+
+![item](./img/page/item/item.JPG)
 
 ### 상품관리
+
+![itemmanage](./img/page/itemmanage/itemmanage.JPG)
 
 ### 상점
 
@@ -81,6 +140,23 @@
 * 상점 정보 수정 기능
   ![storeInfo](./img/page/store/storeinfo.JPG)
   
+
+* 상품 정렬 기능
+  ![sorting](./img/page/store/sorting.JPG)
+
+
+* 페이징 기능
+  ![paging](./img/page/store/paging.JPG)
+
+
+* 상점 후기 작성 기능
+  ![storeReview](./img/page/store/storeReview.JPG)
+  ![storeReview2](./img/page/store/storeReview2.JPG)
+  
+
+* 상품 거래 기능
+  ![trade](./img/page/store/trade.JPG)
+
 </div>
 </details>
 

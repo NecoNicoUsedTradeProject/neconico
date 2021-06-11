@@ -20,11 +20,11 @@ public class StoreItemListServiceImpl implements StoreItemListService{
     private final StoreItemListMapper listMapper;
 
     //Paging 크기
-    private final Long pageSize = 10l;
+    private final Long pageSize = 10L;
     //아이템 카드 20개 나열
-    private final Long cardPerPage = 20l;
+    private final Long cardPerPage = 20L;
     //아이템 카드 외 10개 나열
-    private final Long otherCardPerPage = 10l;
+    private final Long otherCardPerPage = 10L;
 
     @Override
     public Map<String, Long> createItemListCount(Long userId){
@@ -102,7 +102,11 @@ public class StoreItemListServiceImpl implements StoreItemListService{
         Criteria cri = new Criteria();
         cri.setCurrentPage(request.getCurrentPage());
         cri.setContentPerPage(contentPerPage);
-        cri.setSortingColumn(request.getSortingColumn());
+        if(request.getSortingColumn().equals("PRICE")){
+            cri.setSortingColumn("(replace(price,',','') + 0)");
+        } else{
+            cri.setSortingColumn(request.getSortingColumn());
+        }
         cri.setRequestOrder(request.getRequestOrder());
         return cri;
     }
