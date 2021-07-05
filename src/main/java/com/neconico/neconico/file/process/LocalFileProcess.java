@@ -10,7 +10,7 @@ import java.util.UUID;
 
 public class LocalFileProcess implements FileProcess {
 
-    private static final String LOCAL_DIR = "C:/Temp/";
+    private static final String LOCAL_DIR = "/localdir/";
 
     private String dirName;
 
