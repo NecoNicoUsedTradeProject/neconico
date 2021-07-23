@@ -7,10 +7,10 @@ import org.springframework.stereotype.Component;
 @Component
 public class FileProcessFactory {
 
-    private static String fileType;
+    private static String fileLocation;
 
     public static FileProcess getFileProcess(FilePolicy filePolicy) throws IllegalArgumentException {
-        switch (fileType) {
+        switch (fileLocation) {
             case "s3":
                 return new S3FileProcess(filePolicy);
             case "local":
@@ -20,8 +20,8 @@ public class FileProcessFactory {
         }
     }
 
-    @Value("${file.type}")
+    @Value("${file.location}")
     private void setFileType(String type) {
-        fileType = type;
+        fileLocation = type;
     }
 }
